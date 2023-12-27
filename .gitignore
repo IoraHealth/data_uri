@@ -4,4 +4,3 @@ coverage/
 data_uri-*.gem
 
 .ruby-version
-Gemfile.lock

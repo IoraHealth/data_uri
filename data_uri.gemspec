@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'data_uri'
+
 Gem::Specification.new do |s|
   s.name        = 'data_uri'
-  s.version     = '0.0.3'
+  s.version     = URI::Data::VERSION
   s.author      = 'Donald Ball'
   s.email       = 'donald.ball@gmail.com'
   s.homepage    = 'http://github.com/dball/data_uri'
@@ -16,4 +21,7 @@ Gem::Specification.new do |s|
 
   s.require_path = 'lib'
   s.files = %w[README.rdoc Rakefile] + Dir.glob('lib/**/*')
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'minitest'
 end

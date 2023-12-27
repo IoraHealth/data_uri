@@ -4,6 +4,8 @@ source 'https://rubygems.org/'
 
 gemspec
 
-gem 'minitest'
-gem 'rake'
-gem 'simplecov'
+group :test do
+  gem 'minitest'
+  gem 'rake'
+  gem 'simplecov'
+end

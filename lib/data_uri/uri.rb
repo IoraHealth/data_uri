@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 require 'cgi'
+require 'uri/generic'
 
 module URI
   class Data < Generic
+    VERSION = '0.0.4'.freeze
     COMPONENT = %i[scheme opaque].freeze
     MIME_TYPE_RE = %r{^([-\w.+]+/[-\w.+]*)}.freeze
     MIME_PARAM_RE = /^;([-\w.+]+)=([^;,]+)/.freeze
