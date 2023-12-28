@@ -1,18 +1,30 @@
 PATH
   remote: .
   specs:
-    data_uri (0.0.3)
+    data_uri (0.0.4)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.2.3)
-    rake (10.1.1)
+    docile (1.4.0)
+    minitest (5.20.0)
+    rake (13.1.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
 
 PLATFORMS
-  ruby
+  arm64-darwin-22
+  linux
 
 DEPENDENCIES
   data_uri!
   minitest
   rake
+  simplecov
+
+BUNDLED WITH
+   2.4.22
